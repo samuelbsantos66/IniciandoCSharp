@@ -1,0 +1,41 @@
+using ConsoleApp1_EXEMPLO_VINICIUS.Exemplo1;
+
+namespace ConsoleApp1_EXEMPLO_VINICIUS
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+
+            var idade = 18;
+            if (idade >= 18) Console.WriteLine("Pode entrar no barco");
+            else Console.WriteLine("Não pode entrar no barco");
+
+
+            for (int i = 0; i < idade; i++) 
+            { Console.WriteLine($"{i} Vou me dar bem com C#");
+            }
+            // formas de instanciar
+            Carro c = new Carro();
+            c.ano = 2004;
+            c.velo = 200;
+            c.modelo = "Ferrari";
+
+            Carro c2 = new();
+            c.ano = 2004;
+            c.velo = 200;
+            c.modelo = "Porsche";
+
+            Carro c3 = new()
+            {
+                ano = 1980,
+                velo = 100,
+                modelo = "Camaro"
+            };
+
+            
+
+        }
+    }
+}
